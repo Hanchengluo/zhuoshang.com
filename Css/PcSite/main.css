@@ -62,6 +62,41 @@
 .bg-red {
   background-color: #e04728;
 }
+.bg-hei {
+  background-color: #333;
+}
+.bannerbox {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f5f8;
+  height: 400px;
+  position: relative;
+}
+.bannerbox .swiper-slide {
+  text-align: center;
+}
+.bannerbox img {
+  width: auto;
+  height: 400px;
+  vertical-align: top;
+}
+.bannerbox .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 24px;
+}
+.bannerbox .bannertext {
+  display: block;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  font-weight: normal;
+  text-align: left;
+  line-height: 40px;
+  padding: 12px 24px;
+}
 .border {
   border: #ddd solid 1px;
 }
@@ -132,6 +167,131 @@
   color: #fff;
   background-color: #f7ab00;
   border-color: #1291f1;
+}
+.project {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 46px;
+  padding-bottom: 64px;
+}
+.project .column-tit {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.project .column-tit .leftline {
+  display: block;
+  height: 1px;
+  background: #cdd6dd;
+  position: absolute;
+  top: 32px;
+  width: 60%;
+}
+.project .column-tit .project-tit {
+  display: block;
+  overflow: hidden;
+  height: 64px;
+  background-color: #fff;
+  position: relative;
+}
+.project .column-tit .project-tit .iconbox {
+  display: inline-block;
+  vertical-align: top;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  border: 1px solid #cdd6dd;
+  text-align: center;
+  line-height: 64px;
+  margin-right: 20px;
+}
+.project .column-tit .project-tit .text {
+  line-height: 34px;
+}
+.project-column {
+  display: block;
+  position: relative;
+}
+.project-column li.project-box {
+  display: block;
+  width: 25%;
+  height: 400px;
+  float: left;
+  margin-top: 48px;
+  position: relative;
+  -webkit-transition: 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+  transition: 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+.project-column li.project-box .infobox {
+  height: 284px;
+  padding: 58px 30px;
+  background-size: 100%;
+}
+.project-column li.project-box .infobox > h2 {
+  line-height: 48px;
+}
+.project-column li.project-box .infobox .textline {
+  display: block;
+  height: 1px;
+  width: 56px;
+  background-color: #e04728;
+  margin: 12px 0;
+}
+.project-column li.project-box .infobox .infotext {
+  line-height: 24px;
+}
+.project-column li.project-box .popbox {
+  background-color: #e04728;
+  color: #fff;
+  height: 80%;
+  width: 80%;
+  padding: 10% 25% 10% 15%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.3, 0, 0, 1.37);
+  transition: 0.3s cubic-bezier(0.3, 0, 0, 1.37);
+}
+.project-column li.project-box .popbox > h2 {
+  line-height: 48px;
+}
+.project-column li.project-box .popbox .textline {
+  display: block;
+  height: 1px;
+  width: 56px;
+  background-color: #333;
+  margin: 18px 0;
+}
+.project-column li.project-box .popbox .infotext {
+  line-height: 24px;
+}
+.project-column li:hover.project-box {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  z-index: 3000;
+}
+.project-column li:hover.project-box .popbox {
+  opacity: 1;
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+.project-column .GBinfo {
+  background: url(../../UploadFile/PcSite/project01.png) center center no-repeat;
+}
+.project-column .Electronic {
+  background: url(../../UploadFile/PcSite/project02.png) center center no-repeat;
+}
+.project-column .Pension {
+  background: url(../../UploadFile/PcSite/project03.png) center center no-repeat;
+}
+.project-column .Healthcare {
+  background: url(../../UploadFile/PcSite/project04.png) center center no-repeat;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
@@ -402,12 +562,29 @@ a {
   text-decoration: none;
 }
 .hover a:hover {
-  color: #ed6d00;
+  color: #e04728;
   text-decoration: underline !important;
 }
 select,
 input {
   font-family: inherit;
+}
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../Font/PcSite/iconfont.eot');
+  src: url('../../Font/PcSite/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../../Font/PcSite/iconfont.woff') format('woff'), /* chrome、firefox */ url('../../Font/PcSite/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../../Font/PcSite/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }
 .l-left {
   float: left;
@@ -456,6 +633,9 @@ input {
 .font30 {
   font-size: 30px;
 }
+.font36 {
+  font-size: 36px;
+}
 .fontw6 {
   font-weight: 600;
 }
@@ -477,37 +657,19 @@ input {
   text-align: left;
 }
 .col-hei {
-  color: #25272a;
+  color: #333;
 }
 .col-hui {
   color: #b4b5b7;
 }
 .col-dhui {
-  color: #7c7c7d;
-}
-.col-huang {
-  color: #f7ab00;
-}
-.col-cheng {
-  color: #ed6d00;
+  color: #8e9ca5;
 }
 .col-red {
-  color: #ff0023;
-}
-.col-lv {
-  color: #33c500;
+  color: #e04728;
 }
 .col-bai {
   color: #fff;
-}
-.col-blue {
-  color: #2d87d9;
-}
-.col-dblue {
-  color: #0d2c54;
-}
-.col-lblue {
-  color: #1291f1;
 }
 .text-al {
   text-align: left;
@@ -609,6 +771,7 @@ input:-ms-input-placeholder {
   box-shadow: 0px 0px 5px #ddd;
   border-bottom: 2px solid #e04728;
   height: 110px;
+  width: 100%;
 }
 .header .logobox {
   display: block;
@@ -635,12 +798,23 @@ input:-ms-input-placeholder {
   padding: 0 28px;
   font-size: 18px;
   font-family: 'SimSun';
+  background: url(../../Images/PcSite/navarrow.png) -14px bottom no-repeat;
+  cursor: pointer;
+}
+.header .navbox li > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 .header .navbox li.active,
 .header .navbox li:hover,
 .header .navbox li:active {
-  font-weight: bold;
+  color: #e04728;
   background: url(../../Images/PcSite/navarrow.png) center bottom no-repeat;
+  transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  -o-transition-duration: .3s;
 }
 .pd4 {
   padding: 4px 0;

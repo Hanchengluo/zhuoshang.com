@@ -4,14 +4,14 @@
 @support-ie-version: 7;
 @use-autoprefixer: false;
 @support-html5: true;
-@default-text-color:#6c6c6c;
-@default-input-placeholder-color:#b4b5b7;
-@default-base-font-family:"Microsoft YaHei", Arial, sans-serif;
-@default-heading-font-family:"Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-@default-old-ie-heading-font-family:"Microsoft YaHei", Arial, sans-serif;
-@default-code-font-family:Monaco, Consolas, monospace;
-@default-border-radius:5px;
-@default-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);
+@default-text-color: #6c6c6c;
+@default-input-placeholder-color: #b4b5b7;
+@default-base-font-family: "Microsoft YaHei", Arial, sans-serif;
+@default-heading-font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+@default-old-ie-heading-font-family: "Microsoft YaHei", Arial, sans-serif;
+@default-code-font-family: Monaco, Consolas, monospace;
+@default-border-radius: 5px;
+@default-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 // global scope
 .global-normalize-opentype();
 // global scope
@@ -31,11 +31,26 @@ a{
     text-decoration: none;
 }
 .hover a:hover{
-    .col-cheng();
+    .col-red();
     text-decoration: underline !important;
 }
 select,input{
     font-family: inherit;
+}
+/*字体图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../../Font/PcSite/iconfont.eot'); /* IE9*/
+    src: url('../../Font/PcSite/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../Font/PcSite/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../Font/PcSite/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../Font/PcSite/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
 }
 // float layout
 .l-left{
