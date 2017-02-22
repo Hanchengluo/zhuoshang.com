@@ -245,8 +245,8 @@
 .project-column li.project-box .popbox {
   background-color: #e04728;
   color: #fff;
-  height: 80%;
-  width: 80%;
+  height: 86%;
+  width: 70%;
   padding: 10% 25% 10% 15%;
   left: 0;
   opacity: 0;
@@ -266,7 +266,15 @@
   margin: 18px 0;
 }
 .project-column li.project-box .popbox .infotext {
+  display: block;
+  overflow: hidden;
   line-height: 24px;
+}
+.project-column li.project-box .popbox .btn-checkmore {
+  display: inline-block;
+  margin: 12px 0;
+  border: 1px solid #fff;
+  padding: 14px 18px;
 }
 .project-column li:hover.project-box {
   -webkit-transform: scale(0.7);
@@ -292,6 +300,525 @@
 }
 .project-column .Healthcare {
   background: url(../../UploadFile/PcSite/project04.png) center center no-repeat;
+}
+.bigdata {
+  display: block;
+  overflow: hidden;
+  height: 480px;
+  background: #0f0f0f url(../../UploadFile/PcSite/bigdata-bg.png) center center no-repeat;
+  background: url(../../UploadFile/PcSite/bigdata-bg.png) center center no-repeat / 9;
+}
+.bigdata .column-tit {
+  display: block;
+  margin: 0 auto;
+}
+.bigdata .column-tit .topline {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.bigdata .column-tit .bigdata-tit {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.bigdata .column-tit .bigdata-tit .iconbox {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 64px;
+}
+.bigdata .column-tit .bigdata-tit .text {
+  line-height: 34px;
+  margin-top: 12px;
+}
+.bigdata-column div.bigdatabox {
+  display: block;
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+.bigdata-column div.bigdatabox .text {
+  display: block;
+  overflow: hidden;
+  padding: 14px 140px;
+  line-height: 30px;
+}
+.bigdata-column div.bigdatabox .checkmore {
+  display: inline-block;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin: 50px auto;
+}
+.bigdata-column div:hover.bigdatabox .text {
+  margin-top: -140px;
+  transition: .6s;
+}
+.bigdata-column .bigdata-iconbox {
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  margin: 20px 40px;
+}
+.bigdata-column .bigdata-iconbox li {
+  display: block;
+  float: left;
+  width: 25%;
+  cursor: default;
+}
+.bigdata-column .bigdata-iconbox li .iconbox {
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  font-size: 36px;
+  display: inline-block;
+  background: rgba(224, 71, 40, 0.5);
+}
+.bigdata-column .bigdata-iconbox li span {
+  display: inline-block;
+  margin-left: 12px;
+  line-height: 78px;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+}
+.bigdata-column .bigdata-iconbox li:hover .iconbox {
+  background-color: #e04728;
+}
+.things {
+  display: block;
+  overflow: hidden;
+  background-color: #f0efef !important;
+}
+.things .column-tit {
+  display: block;
+}
+.things .column-tit .topline {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: #cdd6dd;
+  margin-left: 32px;
+}
+.things .column-tit .things-tit {
+  display: block;
+  overflow: hidden;
+  height: 64px;
+}
+.things .column-tit .things-tit .iconbox {
+  display: inline-block;
+  vertical-align: top;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  border: 1px solid #cdd6dd;
+  text-align: center;
+  line-height: 64px;
+  margin-right: 20px;
+}
+.things .column-tit .things-tit .text {
+  line-height: 34px;
+}
+.things .thingstext {
+  color: #8e9ca5;
+  margin: 36px auto;
+  line-height: 36px;
+  font-size: 18px;
+}
+.things .thingstext > p {
+  text-indent: 36px;
+}
+.column-list {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 48px;
+}
+.column-list li.columnbox {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  float: left;
+  border: 1px solid #ddd;
+  width: 370px;
+  height: 420px;
+  margin: 0 11px;
+  box-sizing: border-box;
+  cursor: default;
+}
+.column-list li.columnbox .pic {
+  display: block;
+  overflow: hidden;
+  width: 370px;
+  height: 240px;
+}
+.column-list li.columnbox .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.column-list li.columnbox > a.title {
+  display: block;
+  width: 330px;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+  background-color: #e04728;
+}
+.column-list li.columnbox > a.title span {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.column-list li.columnbox > a.title > i {
+  display: inline-block;
+  width: 6px;
+  float: right;
+}
+.column-list li.columnbox > a.title > i img {
+  width: 100%;
+  vertical-align: middle;
+}
+.column-list li.columnbox .infobox {
+  height: 68px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding: 10px 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #ddd;
+}
+.column-list li.columnbox .column-time {
+  height: 40px;
+  padding: 0 20px;
+}
+.column-list li.columnbox .column-time > i {
+  line-height: 36px;
+  margin-right: 4px;
+}
+.column-list li.columnbox .column-time > span {
+  line-height: 40px;
+}
+.column-list li:hover.columnbox {
+  box-shadow: 0px 0px 12px #ccc;
+}
+.column-list li:hover.columnbox .title > i {
+  margin-right: 12px;
+  transition: .3s;
+}
+.news {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 46px;
+  padding-bottom: 46px;
+}
+.news .column-tit {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.news .column-tit .leftline {
+  display: block;
+  height: 1px;
+  background: #cdd6dd;
+  position: absolute;
+  top: 32px;
+  width: 60%;
+}
+.news .column-tit .news-tit {
+  display: block;
+  overflow: hidden;
+  height: 64px;
+  background-color: #fff;
+  position: relative;
+}
+.news .column-tit .news-tit .iconbox {
+  display: inline-block;
+  vertical-align: top;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  border: 1px solid #cdd6dd;
+  text-align: center;
+  line-height: 64px;
+  margin-right: 20px;
+}
+.news .column-tit .news-tit .text {
+  width: 800px;
+  line-height: 34px;
+  float: left;
+}
+.news .column-tit .news-tit a.checkmore {
+  display: block;
+  float: right;
+  padding: 11px 22px;
+  background-color: #e04728;
+  color: #fff;
+  margin-top: 14px;
+}
+.column-news {
+  display: block;
+  overflow: hidden;
+  padding: 18px 0;
+}
+.column-news .leftbox {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.column-news .rightbox {
+  display: block;
+  float: right;
+  width: 50%;
+}
+.column-news .newsbox {
+  display: block;
+  overflow: hidden;
+  padding: 22px 0;
+}
+.column-news .newsbox .time {
+  display: inline-block;
+  width: 100px;
+  float: left;
+}
+.column-news .newsbox .time > p {
+  margin-bottom: 8px;
+}
+.column-news .newsbox .leftline {
+  display: inline-block;
+  width: 2px;
+  height: 26px;
+  background-color: #e04728;
+  float: left;
+}
+.column-news .newsbox a.title {
+  display: inline-block;
+  float: left;
+  font-size: 24px;
+  color: #333;
+  width: 430px;
+  margin-left: 24px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.column-news .newsbox a:hover.title,
+.column-news .newsbox a:active.title,
+.column-news .newsbox a.active.title {
+  color: #8e9ca5;
+  text-decoration: underline;
+}
+.partner {
+  display: block;
+  overflow: hidden;
+  width: 1098px;
+  padding: 0 44px;
+  margin: 48px auto;
+  position: relative;
+}
+.partner .partnerbox {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.partner .partnerbox img {
+  width: 100%;
+}
+.partner .swiper-button-prev,
+.partner .swiper-button-next {
+  width: 20px;
+  height: 48px;
+  background-size: 100%;
+}
+.partner .swiper-button-prev1 {
+  background-image: url(../../Images/PcSite/arrow-prev-red.png);
+}
+.partner .swiper-button-next1 {
+  background-image: url(../../Images/PcSite/arrow-next-red.png);
+}
+.client {
+  display: block;
+  overflow: hidden;
+  padding-top: 34px;
+}
+.client li a.clientbox {
+  display: block;
+  overflow: hidden;
+  width: 220px;
+  height: 140px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 8px;
+}
+.client li a.clientbox img {
+  width: 100%;
+  vertical-align: top;
+}
+.client li a:hover.clientbox {
+  border: 1px solid #e04728;
+  box-shadow: 0px 0px 8px #aaa;
+}
+.contact {
+  position: relative;
+  top: 140px;
+  background-color: #333;
+}
+.contact .contactbox {
+  height: 340px;
+  position: relative;
+  top: -140px;
+  background: url(../../UploadFile/PcSite/contact-bg.png) center center no-repeat;
+}
+.contact .contactbox .column-tit {
+  display: block;
+  margin: 0 auto;
+}
+.contact .contactbox .column-tit .topline {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.contact .contactbox .column-tit .contact-tit {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .contactbox .column-tit .contact-tit .iconbox {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 64px;
+}
+.contact .contactbox .column-tit .contact-tit .text {
+  line-height: 34px;
+  margin-top: 12px;
+}
+.contact .contactbox .boxtext {
+  margin-top: 42px;
+  line-height: 46px;
+  text-align: center;
+  vertical-align: middle;
+}
+.footer {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-top: 34px;
+}
+.footer .logobox {
+  display: block;
+  width: 180px;
+  height: 60px;
+  float: left;
+  margin-left: 74px;
+}
+.footer .footlink {
+  display: block;
+  overflow: hidden;
+  line-height: 34px;
+  float: left;
+  color: #ddd;
+  margin-left: 48px;
+}
+.footer .footlink .title {
+  display: inline-block;
+  float: left;
+}
+.footer .footlink .linkbox {
+  float: left;
+}
+.footer .footlink .linkbox > a {
+  display: inline-block;
+  margin: 0 14px;
+}
+.footer .footlink .sec {
+  display: block;
+  line-height: 34px;
+  padding-left: 80px;
+}
+.footer .footlink .sec > a {
+  margin: 0 8px;
+}
+.copyright {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: #000;
+  margin-top: 24px;
+}
+.copyright .sec {
+  padding-left: 38px;
+  color: #b4b5b7;
+}
+/* 解决方案 */
+.innerbanner {
+  display: block;
+  height: 266px;
+  background: url(../../UploadFile/PcSite/innerbanner01.png) center center no-repeat;
+  padding-top: 34px;
+}
+.innerbanner .title {
+  display: block;
+  padding: 24px 0;
+}
+.innerbanner .info {
+  line-height: 40px;
+}
+.column-nav {
+  display: block;
+  background-color: #333;
+  height: 54px;
+  line-height: 54px;
+  position: relative;
+}
+.column-nav li {
+  color: #fff;
+  float: left;
+  padding: 0 34px;
+}
+.column-nav li > a {
+  font-size: 18px;
+}
+.column-nav li > a i {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 18px;
+}
+.column-nav li:hover {
+  background-color: #e04728;
+  position: relative;
+  z-index: 999;
+  height: 66px;
+  line-height: 66px;
+  top: -6px;
+  box-shadow: 0px 0px 5px #333;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
@@ -636,6 +1163,9 @@ input {
 .font36 {
   font-size: 36px;
 }
+.font48 {
+  font-size: 48px;
+}
 .fontw6 {
   font-weight: 600;
 }
@@ -667,6 +1197,9 @@ input {
 }
 .col-red {
   color: #e04728;
+}
+.col-dred {
+  color: #990000;
 }
 .col-bai {
   color: #fff;
@@ -714,7 +1247,7 @@ input:-ms-input-placeholder {
   width: 100%;
 }
 .main {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
 }
 .topnav {
@@ -757,7 +1290,7 @@ input:-ms-input-placeholder {
 }
 .topnav .top-link a.weixin .weixin-pic img {
   box-shadow: 0px 0px 5px #aaa;
-  border: 1px solid #ddd \9;
+  border: 1px solid #191919;
   box-sizing: border-box;
   z-index: 96;
 }
@@ -867,9 +1400,6 @@ input:-ms-input-placeholder {
 .margin210 {
   margin: auto 210px;
 }
-.margin8-12 {
-  margin: 8px 12px !important;
-}
 .mt10 {
   margin-top: 10px;
 }
@@ -920,6 +1450,9 @@ input:-ms-input-placeholder {
 }
 .mr20 {
   margin-right: 20px;
+}
+.ml24 {
+  margin-left: 24px !important;
 }
 .mr24 {
   margin-right: 24px !important;
