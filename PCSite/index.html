@@ -51,11 +51,11 @@
                 <div class="navbox">
                     <ul>
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li><a href="">解决方案</a></li>
-                        <li><a href="">大数据</a></li>
-                        <li><a href="">物联网</a></li>
-                        <li><a href="">新闻资讯</a></li>
-                        <li><a href="">关于我们</a></li>
+                        <li><a href="projectlist.html">解决方案</a></li>
+                        <li><a href="bigdata.html">大数据</a></li>
+                        <li><a href="Internetthings.html">物联网</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="about.html">关于我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -243,6 +243,7 @@
             <div class="thingstext main">
                 <p>物联网是指通过各种信息传感设备，实时采集任何需要监控、连接、互动的物体或过程等各种需要的信息，与互联网结合形成的一个巨大网络。其目的是实现物与物、物与人，所有的物品与网络的连接，方便识别、管理和控制。其一，物联网的核心和基础仍然是互联网，是在互联网基础上的延伸和扩展的网络；其二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信，也就是物物相息。</p>
             </div>
+            <div class="project-case" style="padding:0">
             <div class="column-list main">
                 <ul>
                     <li class="columnbox">
@@ -252,7 +253,7 @@
                             <p>广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理</p>
                         </div>
                         <div class="column-time">
-                            <i class="l-left col-dhui font18 iconfont">&#xe671;</i><span class="col-dhui font14 l-left">2016-02-14</span>
+                            <i class="l-left col-dhui font18 iconfont"></i><span class="col-dhui font14 l-left">2016-02-14</span>
                         </div>
                     </li>
                     <li class="columnbox">
@@ -262,7 +263,7 @@
                             <p>广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理</p>
                         </div>
                         <div class="column-time">
-                            <i class="l-left col-dhui font18 iconfont">&#xe671;</i><span class="col-dhui font14 l-left">2016-02-14</span>
+                            <i class="l-left col-dhui font18 iconfont"></i><span class="col-dhui font14 l-left">2016-02-14</span>
                         </div>
                     </li>
                     <li class="columnbox">
@@ -272,11 +273,12 @@
                             <p>广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理广东卓商网络科技有限公司是国家认证的高新技术企业，也是双软认证单位。公司拥有一支高素质团队，其中专家团队由多位信息工程博士和美国项目管理</p>
                         </div>
                         <div class="column-time">
-                            <i class="l-left col-dhui font18 iconfont">&#xe671;</i><span class="col-dhui font14 l-left">2016-02-14</span>
+                            <i class="l-left col-dhui font18 iconfont"></i><span class="col-dhui font14 l-left">2016-02-14</span>
                         </div>
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
         <div class="news">
             <div class="column-tit">
@@ -455,12 +457,12 @@
       prevButton: '.swiper-button-prev',
       spaceBetween: 30,
       onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-        swiperAnimateCache(swiper); //隐藏动画元素 
+        swiperAnimateCache(swiper); //隐藏动画元素
         swiperAnimate(swiper); //初始化完成开始动画
-      }, 
-      onSlideChangeEnd: function(swiper){ 
+      },
+      onSlideChangeEnd: function(swiper){
         swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-      } 
+      }
     });
     var swiper = new Swiper('.swiper-container1', {
         nextButton: '.swiper-button-next1',
